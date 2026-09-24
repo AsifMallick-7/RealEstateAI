@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.env
+*.log
+
+# Generated artifacts
+models/*.joblib
+models/*.pkl
+models/*.pickle
+models/model_metadata.json
+outputs/metrics/*.csv
+outputs/plots/*.png
+
+# Optional local data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
