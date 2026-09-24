@@ -1,0 +1,66 @@
+{
+  "best_model": "Random Forest",
+  "target": "MedHouseVal",
+  "random_state": 42,
+  "test_size": 0.2,
+  "cv_folds": 5,
+  "best_params": {
+    "model__n_estimators": 150,
+    "model__min_samples_split": 5,
+    "model__max_features": "sqrt",
+    "model__max_depth": null
+  },
+  "metrics": [
+    {
+      "Model": "Random Forest",
+      "CV_MAE": 0.33495941325081635,
+      "CV_RMSE": 0.5113684448161744,
+      "CV_R2": 0.8042453255422906,
+      "MAE": 0.32689429283914756,
+      "RMSE": 0.5034471581725427,
+      "R2": 0.8065802010817615
+    },
+    {
+      "Model": "Tuned Random Forest",
+      "CV_MAE": 0.3418275313092325,
+      "CV_RMSE": 0.5079206149744864,
+      "CV_R2": 0.8068826715171229,
+      "MAE": 0.3361441926920841,
+      "RMSE": 0.5070061512977122,
+      "R2": 0.8038358697764791
+    },
+    {
+      "Model": "Gradient Boosting",
+      "CV_MAE": 0.36260579740831655,
+      "CV_RMSE": 0.5248977410163527,
+      "CV_R2": 0.793813862399931,
+      "MAE": 0.3619551147849225,
+      "RMSE": 0.5319787793832026,
+      "R2": 0.7840358037733038
+    },
+    {
+      "Model": "Linear Regression",
+      "CV_MAE": 0.5225957514926745,
+      "CV_RMSE": 0.7134590923211689,
+      "CV_R2": 0.6190784138060419,
+      "MAE": 0.525081034598162,
+      "RMSE": 0.7249688840329971,
+      "R2": 0.5989191988583666
+    },
+    {
+      "Model": "Ridge Regression",
+      "CV_MAE": 0.5225862263031467,
+      "CV_RMSE": 0.7134527841874061,
+      "CV_R2": 0.6190853277484182,
+      "MAE": 0.5250752716168671,
+      "RMSE": 0.7249828122123123,
+      "R2": 0.5989037874962964
+    }
+  ],
+  "dataset_rows": 20640,
+  "feature_count": 8,
+  "engineered_features": [
+    "RoomsPerBedroom",
+    "BedroomsPerRoom"
+  ]
+}
